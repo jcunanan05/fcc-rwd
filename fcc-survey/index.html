@@ -9,99 +9,103 @@
 </head>
 <body>
   <div class="container">
+    <div class="overlay">  
+    </div>
+
     <main>
-      <header>
-        <h1 id="title">freeCodeCamp Survey</h1>
-
-        <p id="description">This is a survey for freeCodeCamp!!</p>
-      </header>
-      
       <form id="survey-form">
-        <article class="personal-info">
-          <section>
-            <label id="name-label" for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter Name..." required>
-          </section>
+        <header>
+          <h1 id="title">freeCodeCamp Survey</h1>
+  
+          <p id="description">This is a survey for freeCodeCamp!!</p>
+        </header>
 
-          <section>
-            <label id="email-label" for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter Email..." required>
-          </section>
-
-          <section>
-            <label id="number-label" for="number">Age</label>
-            <input type="number" name="age" id="number" placeholder="Enter Age..." min="1" max="999" required>
-          </section>
-        </article>
-
-
-        <article class="current-role">
-          <section>
-            <label for="current">Your current role??</label>
-            <select name="current-role" id="dropdown">
-              <option value="Student">Student</option>
-              <option value="Working">Working</option>
-            </select>
-          </section>
-        </article>
-
-
-        <article class="history">
-          <section>
-            <p for="old-user">Have you done past projects before the new curriculum?</p>
-            
-            <div>
-              <input type="radio" name="choice" id="choiceYes" value="yes">
-              <label for="choiceYes">Yes</label>
-
-              <input type="radio" name="choice" id="choiceNo" value="no">
-              <label for="choiceNo">No</label>
-            </div>
-          </section> 
-        </article>
-
-
-        <article class="feelings">
-          <section>
-            <label for="happinessLevel">How happy are you with the new curriculum?</label>
-            <div>
-              <input type="range" min="1" max="5" name="happinessLevel">
-            </div>
-          </section>
-        </article>
-
-        <article class="faves">
-          <section>
-            <legend>What do you like most in freeCodeCamp??</legend>
-
-            <div>
-              <input type="checkbox" id="tutorials" name="faves" value="tutorials">
-              <label for="tutorials">Tutorials</label>
-            </div>
-
-            <div>
-              <input type="checkbox" id="community" name="faves" value="community">
-              <label for="community">Community</label>
-            </div>
-
-            <div>
-              <input type="checkbox" id="certificates" name="faves" value="certificates">
-              <label for="certificates">Certificates</label>
-            </div>
-          </section>
-        </article>
-
-        <article>
-          <section>
-            <label for="comments">Any comments and suggestions?</label>
-
-            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-          </section>
-        </article>
+        <div class="question-list">
+          <article class="personal-info">
+            <section>
+              <label id="name-label" for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="Enter Name..." required>
+            </section>
+  
+            <section>
+              <label id="email-label" for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Enter Email..." required>
+            </section>
+  
+            <section>
+              <label id="number-label" for="number">Age</label>
+              <input type="number" name="age" id="number" placeholder="Enter Age..." min="1" max="999" required>
+            </section>
+          </article>
+  
+          <article class="current-role">
+            <section>
+              <label for="dropdown">Your current role??</label>
+              <select name="current-role" id="dropdown">
+                <option value="Student">Student</option>
+                <option value="Working">Working</option>
+              </select>
+            </section>
+          </article>
+  
+          <article class="history">
+            <section>
+              <p for="user-type">Have you done past projects before the new curriculum?</p>
+              
+              <div>
+                <input type="radio" name="user-type" id="choiceYes" value="yes">
+                <label for="choiceYes">Yes</label>
+  
+                <input type="radio" name="user-type" id="choiceNo" value="no">
+                <label for="choiceNo">No</label>
+              </div>
+            </section> 
+          </article>
+  
+          <article class="feelings">
+            <section>
+              <label for="happinessLevel">How happy are you with the new curriculum?</label>
+              <div>
+                <input type="range" min="1" max="5" name="happinessLevel">
+              </div>
+            </section>
+          </article>
+  
+          <article class="faves">
+            <section>
+              <legend>What do you like most in freeCodeCamp??</legend>
+  
+              <div>
+                <input type="checkbox" id="tutorials" name="faves" value="tutorials">
+                <label for="tutorials">Tutorials</label>
+              </div>
+  
+              <div>
+                <input type="checkbox" id="community" name="faves" value="community">
+                <label for="community">Community</label>
+              </div>
+  
+              <div>
+                <input type="checkbox" id="certificates" name="faves" value="certificates">
+                <label for="certificates">Certificates</label>
+              </div>
+            </section>
+          </article>
+  
+          <article class="comments">
+            <section>
+              <label for="comments">Any comments and suggestions?</label>
+  
+              <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </section>
+          </article>
+        </div>
+        
 
         <button id="submit" type="submit">Submit</button>
       </form>
     </main>
+
 
     <footer>Made by <a href="https://github.com/jcunanan05">Jonathan</a></footer>
   </div>
