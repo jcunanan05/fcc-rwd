@@ -13,34 +13,52 @@
     </div>
 
     <main>
-      <form id="survey-form">
-        <header>
+      <form id="survey-form" class="form">
+        <header class="header">
           <h1 id="title">freeCodeCamp Survey</h1>
   
-          <p id="description">This is a survey for freeCodeCamp!!</p>
+          <p id="description" class="text-small">This is a survey for freeCodeCamp!!</p>
+
+          <p class="required text-small">* Required Fields</p>
         </header>
 
         <div class="question-list">
           <article class="personal-info">
-            <section>
-              <label id="name-label" for="name">Name</label>
-              <input type="text" name="name" id="name" placeholder="Enter Name..." required>
+            <section class="form-group">
+              <h2>
+                <label id="name-label" for="name">
+                  Name <span class="required">*</span>
+                </label>
+              </h2>
+              <input type="text" name="name" id="name" placeholder="eg. Darth Vader" required>
             </section>
   
-            <section>
-              <label id="email-label" for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Enter Email..." required>
+            <section class="form-group">
+              <h2>
+                <label id="email-label" for="email">
+                  Email <span class="required">*</span>
+                </label>
+              </h2>
+              <input type="email" name="email" id="email" placeholder="empire.strikes@back.com" required>
             </section>
   
-            <section>
-              <label id="number-label" for="number">Age</label>
-              <input type="number" name="age" id="number" placeholder="Enter Age..." min="1" max="999" required>
+            <section class="form-group">
+              <h2>
+                <label id="number-label" for="number">
+                  Age <span class="required">*</span>
+                </label>
+              </h2>
+              <input type="number" name="age" id="number" placeholder="35" min="1" max="999" required>
             </section>
           </article>
   
-          <article class="current-role">
-            <section>
-              <label for="dropdown">Your current role??</label>
+          <article class="current-role form-group">
+            <section class="form-group">
+              <h2>
+                <label for="dropdown">
+                  Your current role??
+                </label>
+              </h2>
               <select name="current-role" id="dropdown">
                 <option value="Student">Student</option>
                 <option value="Working">Working</option>
@@ -48,66 +66,104 @@
             </section>
           </article>
   
-          <article class="history">
-            <section>
-              <p for="user-type">Have you done past projects before the new curriculum?</p>
+          <article class="history form-group">
+            <section class="form-group">
+              <h2>
+                <label for="user-type">
+                  Have you done past projects before the new curriculum?
+                </label>
+              </h2>
               
-              <div>
+              <div class="radio">
                 <input type="radio" name="user-type" id="choiceYes" value="yes">
-                <label for="choiceYes">Yes</label>
-  
+                <label for="choiceYes">
+                  Yes
+                </label>
+              </div>
+
+              <div class="radio">
                 <input type="radio" name="user-type" id="choiceNo" value="no">
-                <label for="choiceNo">No</label>
+                <label for="choiceNo">
+                  No
+                </label>
               </div>
             </section> 
           </article>
   
-          <article class="feelings">
-            <section>
-              <label for="happinessLevel">How happy are you with the new curriculum?</label>
-              <div>
-                <input type="range" min="1" max="5" name="happinessLevel">
+          <article class="feelings form-group">
+            <section class="form-group">
+              <h2>
+                <label for="happinessLevel">
+                  How happy are you with the new curriculum?
+                </label>
+              </h2>
+
+              <div class="range">
+                <div class="container__flex container__flex--split">
+                  <section class="container__flex--left">
+                    Happy
+                  </section>
+                  <section class="container__flex--right">
+                    So Happy
+                  </section>
+                </div>
+  
+                <div class="container__flex">
+                  <input type="range" min="1" max="5" name="happinessLevel" class="stretch">
+                </div>
               </div>
             </section>
           </article>
   
           <article class="faves">
-            <section>
-              <legend>What do you like most in freeCodeCamp??</legend>
+            <section class="form-group">
+              <legend>
+                <h2>What do you like most in freeCodeCamp??</h2>
+              </legend>
   
-              <div>
+              <div class="checkbox">
                 <input type="checkbox" id="tutorials" name="faves" value="tutorials">
-                <label for="tutorials">Tutorials</label>
+                <label for="tutorials">
+                  Tutorials
+                </label>
               </div>
-  
-              <div>
+
+              <div class="checkbox">
                 <input type="checkbox" id="community" name="faves" value="community">
-                <label for="community">Community</label>
+                <label for="community">
+                  Community
+                </label>
               </div>
-  
-              <div>
+
+              <div class="checkbox">
                 <input type="checkbox" id="certificates" name="faves" value="certificates">
-                <label for="certificates">Certificates</label>
+                <label for="certificates">
+                  Certificates
+                </label>
               </div>
             </section>
           </article>
   
           <article class="comments">
-            <section>
-              <label for="comments">Any comments and suggestions?</label>
+            <section class="form-group">
+              <h2>
+                <label for="comments">
+                  Any comments and suggestions?
+                </label>
+              </h2>
   
-              <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+              <textarea name="comments" id="comments" cols="30" rows="10" min></textarea>
             </section>
           </article>
         </div>
         
 
-        <button id="submit" type="submit">Submit</button>
+        <button id="submit" class="button-submit" type="submit">Submit</button>
       </form>
     </main>
 
 
-    <footer>Made by <a href="https://github.com/jcunanan05">Jonathan</a></footer>
+    <footer class="footer container__flex container__center--all">Made by <a href="https://github.com/jcunanan05">&nbsp;Jonathan C</a></footer>
   </div>
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

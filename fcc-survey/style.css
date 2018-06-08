@@ -1,10 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
 @import url('flex.css');
+@import url('forms.css');
+
+:root {
+  --main-bg-color: #b2fab4;
+  --dark-bg-color: #81c784;
+  --main-font-weight: 400;
+  --sub-font-weight: 300;
+  --label-gap: 0.5em;
+  --main-font-size: 17px;
+}
+
+body, html {
+  background-color: var(--main-bg-color);
+  min-width: 360px;
+}
 
 body {
   font-family: Roboto, sans-serif;
-  background-color: #b2fab4;
+  font-size: var(--main-font-size);
+  font-weight: var(--main-font-weight);
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+body, #survey-form, h1, h2 {
+  font-weight: var(--main-font-weight);
+}
+
+.text-small {
+  font-size: 0.7em;
+}
+
+.text-thin {
+  font-weight: var(--sub-font-weight);
 }
 
 main {
@@ -16,25 +52,57 @@ main {
 }
 
 .overlay {
-  background-color: #4caf50;
+  background-color: var(--dark-bg-color);
   z-index: 1;
   width: 100%;
   height: 28vw;
   max-height: 278px;
 }
 
-#survey-form {
-  padding-top: 3em;
+.required {
+  color: red;
 }
 
-#survey-form article, #survey-form header {
-  margin: 5vw;
+.footer {
+  width: 100%;
+  min-height: 85px;
+  margin-top: 50px;
+  background-color: #81c784;
+  color: white;
 }
 
-#survey-form header {
-  margin-top: 0 !important;
+.footer a {
+  text-decoration: none;
+  color: #fff9c4;
 }
 
-/* ----------- Desktop ----------- */
+.footer a:hover {
+  color: #fffbe0;
+}
+
+
+/* ----------- Wider phone or desktop ----------- */
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 1.9em;
+  }
+
+  main {
+    width: 65%;
+  }
+
+  .required, #description {
+    font-size: 0.8em;
+  }
+}
+
+/* ----------- Desktop and above ----------- */
 @media screen and (min-width: 768px) {
+  main {
+    width: 55%;
+  }
+
+  input[type="text"], input[type="email"], input[type="number"],select {
+    width: 50%;
+  }
 }
