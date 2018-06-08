@@ -2,6 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
 @import url('flex.css');
 @import url('forms.css');
+@import url('large.css');
 
 :root {
   --main-bg-color: #b2fab4;
@@ -48,7 +49,9 @@ main {
   width: 80%;
   margin: auto;
   position: relative;
-  bottom: 15vh;
+  bottom: 8em;
+  max-width: 750px;
+  z-index: 2;
 }
 
 .overlay {
@@ -102,7 +105,14 @@ main {
     width: 55%;
   }
 
-  input[type="text"], input[type="email"], input[type="number"],select {
+  input[type="text"], input[type="email"], input[type="number"], select {
+    width: 50%;
+  }
+}
+
+/* ----------- Desktop and above ----------- */
+@media screen and (min-width: 1024px) {
+  .range {
     width: 50%;
   }
 }

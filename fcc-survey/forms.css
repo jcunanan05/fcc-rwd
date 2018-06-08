@@ -5,7 +5,6 @@
 }
 
 .form-group input[type="radio"], .form-group input[type="checkbox"] {
-  background: red;
   margin-top: var(--label-gap);
   margin-bottom: var(--label-gap);
 }
