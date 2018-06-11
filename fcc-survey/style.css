@@ -2,7 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
 @import url('flex.css');
 @import url('forms.css');
-@import url('large.css');
+@import url('breakpoints.css');
 
 :root {
   --main-bg-color: #b2fab4;
@@ -24,15 +24,17 @@ body {
   font-weight: var(--main-font-weight);
 }
 
-h1 {
+
+/* font styles */
+.title {
   font-size: 1.6em;
 }
 
-h2 {
+.subtitle {
   font-size: 1.1em;
 }
 
-body, #survey-form, h1, h2 {
+body, .form, .title, .subtitle {
   font-weight: var(--main-font-weight);
 }
 
@@ -44,6 +46,8 @@ body, #survey-form, h1, h2 {
   font-weight: var(--sub-font-weight);
 }
 
+
+/* layout styles and colors */
 main {
   background-color: white;
   width: 80%;
@@ -59,7 +63,6 @@ main {
   z-index: 1;
   width: 100%;
   height: 28vw;
-  max-height: 278px;
 }
 
 .required {
@@ -81,38 +84,4 @@ main {
 
 .footer a:hover {
   color: #fffbe0;
-}
-
-
-/* ----------- Wider phone or desktop ----------- */
-@media screen and (min-width: 480px) {
-  h1 {
-    font-size: 1.9em;
-  }
-
-  main {
-    width: 65%;
-  }
-
-  .required, #description {
-    font-size: 0.8em;
-  }
-}
-
-/* ----------- Desktop and above ----------- */
-@media screen and (min-width: 768px) {
-  main {
-    width: 55%;
-  }
-
-  input[type="text"], input[type="email"], input[type="number"], select {
-    width: 50%;
-  }
-}
-
-/* ----------- Desktop and above ----------- */
-@media screen and (min-width: 1024px) {
-  .range {
-    width: 50%;
-  }
 }
