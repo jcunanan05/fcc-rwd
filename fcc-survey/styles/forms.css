@@ -24,8 +24,8 @@
 }
 
 .form-group input[type="radio"], .form-group input[type="checkbox"] {
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
+  margin-top: 0.85em;
+  margin-bottom: 0.85em;
 }
 
 .form-group input[type="text"], .form-group input[type="email"], .form-group input[type="number"] {
