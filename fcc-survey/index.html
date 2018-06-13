@@ -13,11 +13,11 @@
     </div>
 
     <main>
-      <form id="survey-form" class="form">
+      <form id="survey-form" class="survey-form form">
         <header class="header">
-          <h1 id="title">freeCodeCamp Survey</h1>
+          <h1 id="title" class="title">freeCodeCamp Survey</h1>
   
-          <p id="description" class="text-small">This is a survey for freeCodeCamp!!</p>
+          <p id="description" class="description text-small">This is a survey for freeCodeCamp!!</p>
 
           <p class="required text-small">* Required Fields</p>
         </header>
@@ -25,7 +25,7 @@
         <div class="question-list">
           <article class="personal-info">
             <section class="form-group">
-              <h2>
+              <h2 class="subtitle">
                 <label id="name-label" for="name">
                   Name <span class="required">*</span>
                 </label>
@@ -34,7 +34,7 @@
             </section>
   
             <section class="form-group">
-              <h2>
+              <h2 class="subtitle">
                 <label id="email-label" for="email">
                   Email <span class="required">*</span>
                 </label>
@@ -43,7 +43,7 @@
             </section>
   
             <section class="form-group">
-              <h2>
+              <h2 class="subtitle">
                 <label id="number-label" for="number">
                   Age <span class="required">*</span>
                 </label>
@@ -54,12 +54,13 @@
   
           <article class="current-role form-group">
             <section class="form-group">
-              <h2>
+              <h2 class="subtitle">
                 <label for="dropdown">
                   Your current role??
                 </label>
               </h2>
-              <select name="current-role" id="dropdown">
+              <select name="current-role" id="dropdown" class="dropdown">
+                <option value="" selected disabled hidden>Select Current Role</option>
                 <option value="Student">Student</option>
                 <option value="Working">Working</option>
               </select>
@@ -68,7 +69,7 @@
   
           <article class="history form-group">
             <section class="form-group">
-              <h2>
+              <h2 class="subtitle">
                 <label for="user-type">
                   Have you done past projects before the new curriculum?
                 </label>
@@ -92,7 +93,7 @@
   
           <article class="feelings form-group">
             <section class="form-group">
-              <h2>
+              <h2 class="subtitle">
                 <label for="happinessLevel">
                   How happy are you with the new curriculum?
                 </label>
@@ -118,7 +119,7 @@
           <article class="faves">
             <section class="form-group">
               <legend>
-                <h2>What do you like most in freeCodeCamp??</h2>
+                <h2 class="subtitle">What do you like most in freeCodeCamp??</h2>
               </legend>
   
               <div class="checkbox">
@@ -145,14 +146,14 @@
           </article>
   
           <article class="comments">
-            <section class="form-group">
-              <h2>
+            <section class="form-group textarea">
+              <h2 class="subtitle">
                 <label for="comments">
                   Any comments and suggestions?
                 </label>
               </h2>
   
-              <textarea name="comments" id="comments" cols="30" rows="10" min></textarea>
+              <textarea name="comments" id="comments"></textarea>
             </section>
           </article>
         </div>

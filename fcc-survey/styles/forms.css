@@ -1,0 +1,75 @@
+.form {
+  padding-top: 3em;
+  box-shadow: -5px 5px 5px -4px #00000041;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.form article, .form header, .form button {
+  margin-left: 2.3em;
+  margin-right: 2.3em;
+}
+
+.form header {
+  margin-top: 0 !important;
+}
+
+.form-group input::placeholder {
+  color: rgb(184, 184, 184);
+  font-weight: var(--sub-font-weight);
+}
+
+.form-group input[type="radio"], .form-group input[type="checkbox"] {
+  margin-top: 0.85em;
+  margin-bottom: 0.85em;
+}
+
+.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="number"] {
+  border: none;
+  background: none;
+  border-bottom: solid 1px rgb(224, 224, 224);
+}
+
+.form-group input[type="text"]:focus, .form-group input[type="email"]:focus, .form-group input[type="number"]:focus {
+  outline: none;
+  border-bottom: solid 1px var(--dark-bg-color);
+}
+
+.textarea textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.button-submit {
+  outline: none;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 2.3em;
+  margin-bottom: 2.3em;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: var(--dark-bg-color);
+}
+
+.button-submit:hover {  
+  cursor: pointer;
+}
+
+.range {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.range input[type="range"] {
+  margin-top: 1.2em;
+}
+
+.checkbox input + label, .radio input + label {
+  margin-left: 0.5em;
+}
