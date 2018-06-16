@@ -1,0 +1,38 @@
+.flex {
+  display: flex;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex.center-x {
+  justify-content: center;
+}
+
+.flex.center-y {
+  align-items: center;
+}
+
+.flex.center-all {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex--column.center-x {
+  align-items: center; 
+}
+
+.flex--column.center-y {
+  justify-content: center;
+}
+
+.flex--column.center-all {
+  align-items: center; 
+  justify-content: center;
+}
+
+.flex > .flex__liquid {
+  /* container child grows */
+  flex: 1;
+}

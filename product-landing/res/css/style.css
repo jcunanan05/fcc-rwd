@@ -1,7 +1,33 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');
+@import url('flex.css');
+@import url('grid.css');
+@import url('font.css');
+@import url('navbar.css');
+@import url('breakpoints.css');
+
+
+:root {
+  --default-black: #222; 
+  --default-grey: #eee;
+}
 
 html, body {
   font-family: 'Merriweather', serif;
+  min-height: 100vh;
+  font-size: 1em;
+  color: var(--default-black);
+  letter-spacing: 0.075em;
+}
+
+.main {
+  min-height: 30em;
+  background-color: #ffffff;
+  flex: 1;
+}
+
+.footer {
+  min-height: 3em;
+  background-color: var(--default-grey);
 }
 
