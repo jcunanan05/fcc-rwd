@@ -26,8 +26,17 @@ html, body {
   flex: 1;
 }
 
+.header {
+  height: 100vh;
+}
+
+.header .container {
+  width: 80%;
+  height: 80%;
+  justify-content: flex-start;
+}
+
 .footer {
   min-height: 3em;
   background-color: var(--default-grey);
 }
-

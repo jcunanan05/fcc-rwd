@@ -1,4 +1,21 @@
+/* mobile */
+@media screen and (max-width: 480px) {
+  .title--header {
+    font-weight: 400;
+    font-size: 14vmin;
+  }
+
+  .subtitle--header {
+    font-weight: 400;
+    font-size: 6vmin;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .navbar {
+    min-height: 2.5em;
+  }
+
   .navbar .navbar-menu {
     display: flex;
   }

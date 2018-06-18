@@ -4,7 +4,27 @@ p {
   color: var(--default-black);
 }
 
-.title {
+.text--center {
+  text-align: center;
+}
+
+.title--header {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 4em;
+}
+
+.title--header .small {
+  font-size: 0.7em;
+}
+
+.subtitle--header {
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.title--brand {
   margin: 0;
   padding: 0;
   font-weight: 400;

@@ -4,11 +4,6 @@
   z-index: 1;
 }
 
-.navbar-brand, .navbar-menu {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-}
-
 .navbar-brand {
   flex: 1;
   justify-content: space-between;
@@ -22,19 +17,25 @@
   cursor: pointer;
   min-width: 3em;
   height: 100%;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+}
+
+.navbar-burger:hover {
+  background-color: var(--default-grey);
 }
 
 .navbar-burger span {
   height: 1px;
-    background-color: var(--default-black);
-    width: 1.1em;
-    margin: 0.1em;
+  background-color: var(--default-black);
+  width: 1.1em;
+  margin: 0.1em;
 }
 
 .navbar-item {
   height: 100%;
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
