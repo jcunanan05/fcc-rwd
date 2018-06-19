@@ -33,7 +33,16 @@ html, body {
 .header .container {
   width: 80%;
   height: 80%;
-  justify-content: flex-start;
+  grid-template-rows: 10fr 2fr;
+}
+
+button.button {
+  border: none;
+  background: none;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 0.3em;
+  min-width: 1em;
 }
 
 .footer {

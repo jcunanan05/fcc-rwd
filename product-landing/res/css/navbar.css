@@ -17,8 +17,8 @@
   cursor: pointer;
   min-width: 3em;
   height: 100%;
-  padding-left: 0.7em;
-  padding-right: 0.7em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
 }
 
 .navbar-burger:hover {
