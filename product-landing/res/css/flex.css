@@ -6,6 +6,14 @@
   flex-direction: column;
 }
 
+.flex__wrap {
+  flex-wrap: wrap;
+}
+
+.flex__nowrap {
+  flex-wrap: nowrap;
+}
+
 .flex.center-x {
   justify-content: center;
 }
@@ -17,6 +25,22 @@
 .flex.center-all {
   justify-content: center;
   align-items: center;
+}
+
+.flex.x--start {
+  align-items: start;
+}
+
+.flex.y--start {
+  justify-content: flex-start;
+}
+
+.flex--column.x--start {
+  justify-content: flex-start;
+}
+
+.flex--column.y--start {
+  align-items: start;
 }
 
 .flex--column.center-x {

@@ -7,57 +7,61 @@
   <link rel="stylesheet" href="res/css/style.css">
   <title>Document</title>
 </head>
-<body class="flex">
-  <div class="container flex flex--column flex__liquid">
-    <nav class="navbar flex">
-      <div class="navbar-brand flex center-y">
-        <a href="" class="navbar-item">
-          <h2 class="title--brand">W</h2>
-        </a>
-
-        <a class="navbar-burger flex flex--column center-all">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-
-      <div class="navbar-menu flex flex__liquid">
-        <div class="navbar-left flex">
-          <a href="" class="navbar-item"><p>Hello</p></a>
+<body>
+  <div class="wrapper flex">
+    <div class="container grid flex__liquid">
+      <nav class="navbar flex">
+        <div class="navbar-brand flex center-y">
+          <a href="" class="navbar-item">
+            <h2 class="title--brand">W</h2>
+          </a>
+  
+          <a class="navbar-burger flex flex--column center-all">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
         </div>
-
-        <div class="navbar-right flex">
-          <a href="" class="navbar-item"><p>Hello</p></a>
-          <a href="" class="navbar-item"><p>Hello</p></a>
+  
+        <div class="navbar-menu flex flex__liquid">
+          <div class="navbar-left flex">
+            <a href="" class="navbar-item"><p>Hello</p></a>
+          </div>
+  
+          <div class="navbar-right flex">
+            <a href="" class="navbar-item"><p>Hello</p></a>
+            <a href="" class="navbar-item"><p>Hello</p></a>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <main class="main">
-      <header class="header flex center-all">
-        <div class="container grid">
-          <section class="text--center">
-            <h1 class="title--header text--center">
-              <span class="bold">W</span>eston <br />
-              <span class="small">New </span>
-              <span class="bold">M</span>usic School
-            </h1>
-    
-            <h2 class="subtitle--header">
-              #learnmusic
-            </h2>
-          </section>
-
-          <form class="form flex center-x">
-            <input type="email" placeholder="Enter your email">
-            <button class="button" type="submit">Contact Us!</button>
-          </form>
-        </div>
-      </header>
-    </main>
-
-    <footer class="footer"></footer>
-  </div>
+      </nav>
+  
+      <main class="main flex flex--column center-x y--start">
+        <header class="header flex center-x">
+          <div class="container grid">
+            <section class="text--center">
+              <h1 class="title--header">
+                <span class="bold">W</span>eston <br />
+                <span class="small">New </span>
+                <span class="bold">M</span>usic School
+              </h1>
+      
+              <h2 class="subtitle--header">
+                #learnmusic
+              </h2>
+            </section>
+  
+            <form class="form flex center-x">
+              <div class="form-group__email grid">
+                <input type="email" placeholder="Enter your email">
+                <button class="button" type="submit">Contact Us!</button>
+              </div>
+            </form>
+          </div>
+        </header>
+      </main>
+  
+      <footer class="footer"></footer>
+    </div>
+  </div>  
 </body>
 </html>

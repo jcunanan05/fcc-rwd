@@ -1,14 +1,23 @@
 /* mobile */
 @media screen and (max-width: 480px) {
   .title--header {
-    font-size: 14vmin;
+    font-size: 13.5vmin;
   }
 
   .subtitle--header {
     font-weight: 400;
-    font-size: 6vmin;
+    font-size: 4vmin;
   }
 }
+
+/* Tablet, Desktop and above */
+@media screen and (min-width: 480px) {
+  .form-group__email.grid {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
 
 @media screen and (min-width: 768px) {
   .navbar {

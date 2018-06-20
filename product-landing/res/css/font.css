@@ -12,7 +12,7 @@ p {
   margin: 0;
   padding: 0;
   font-weight: 300;
-  font-size: 4em;
+  font-size: 3.6em;
 }
 
 .title--header .small {
@@ -26,12 +26,13 @@ p {
 }
 
 .subtitle--header {
+  color: var(--default-red);
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.15em;
 }
 
 .subtitle--header:hover {
-  color: #ef5350;
+  color: var(--default-black);
 }
 
 .title--brand {

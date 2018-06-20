@@ -1,5 +1,6 @@
 .navbar {
-  min-height: 3em;
+  min-height: 3.5em;
+  max-height: 3.5em;
   box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.075);
   z-index: 1;
 }
@@ -9,7 +10,7 @@
   justify-content: space-between;
 }
 
-.navbar-menu {
+.navbar .navbar-menu {
   display: none;
 }
 
@@ -20,6 +21,10 @@
   padding-left: 0.3em;
   padding-right: 0.3em;
 }
+
+/* .navbar-menu.active {
+  display: inline-flex;
+} */
 
 .navbar-burger:hover {
   background-color: var(--default-grey);

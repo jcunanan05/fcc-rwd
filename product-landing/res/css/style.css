@@ -10,6 +10,7 @@
 :root {
   --default-black: #222; 
   --default-grey: #eee;
+  --default-red: #ef5350;
 }
 
 html, body {
@@ -20,29 +21,70 @@ html, body {
   letter-spacing: 0.075em;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body > div.wrapper {
+  min-height: 100vh;
+}
+
+.wrapper > .container.grid {
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 11fr 1.5fr;
+}
+
 .main {
-  min-height: 30em;
   background-color: #ffffff;
-  flex: 1;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 .header {
-  height: 100vh;
+  width: 90%;
+  max-height: 47em;
 }
 
 .header .container {
-  width: 80%;
-  height: 80%;
   grid-template-rows: 10fr 2fr;
+  grid-auto-columns: 1fr;
+}
+
+.header .form {
+  align-items: flex-start;
+}
+
+.header .subtitle--header {
+  margin-top: 1.6em;
 }
 
 button.button {
+  color: #000000e1;
   border: none;
   background: none;
   background-color: rgb(255, 255, 255);
-  border: 1px solid black;
-  border-radius: 0.3em;
-  min-width: 1em;
+  border: 0.7px solid #00000033;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.1em;
+  padding: 0.5em;
+  min-width: 6.8em;
+}
+
+.form input {
+  border: none;
+  background: none;
+  box-shadow: inset 0px 0px 2px 1px #0000005c;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.1em;
+  min-height: 1em;
+  padding: 0.6em;
+}
+
+.form-group__email.grid {
+  grid-gap: 0.16em;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr;
 }
 
 .footer {
