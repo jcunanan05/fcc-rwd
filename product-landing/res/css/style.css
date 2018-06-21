@@ -43,7 +43,8 @@ body > div.wrapper {
 
 .header {
   width: 90%;
-  max-height: 47em;
+  height: 100%;
+  max-height: 35em;
 }
 
 .header .container {
@@ -64,7 +65,7 @@ button.button {
   border: none;
   background: none;
   background-color: rgb(255, 255, 255);
-  border: 0.7px solid #00000033;
+  border: 0.7px solid #00000069;
   box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0.1em;
   padding: 0.5em;
@@ -73,8 +74,9 @@ button.button {
 
 .form input {
   border: none;
+  border: 1px solid #00000052;
   background: none;
-  box-shadow: inset 0px 0px 2px 1px #0000005c;
+  box-shadow: inset 0px 0px 2px 1px #00000061;
   background-color: rgb(255, 255, 255);
   border-radius: 0.1em;
   min-height: 1em;
@@ -85,6 +87,12 @@ button.button {
   grid-gap: 0.16em;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: 1fr;
+}
+
+.section {
+  padding: 2em 0 2em 0;
+  width: 100%;
+  min-height: 50px;
 }
 
 .footer {
