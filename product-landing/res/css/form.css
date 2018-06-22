@@ -1,0 +1,28 @@
+button.button {
+  color: #000000e1;
+  border: none;
+  background: none;
+  background-color: rgb(255, 255, 255);
+  border: 0.7px solid #00000069;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.1em;
+  padding: 0.5em;
+  min-width: 6.8em;
+}
+
+.form input {
+  border: none;
+  border: 1px solid #00000052;
+  background: none;
+  box-shadow: inset 0px 0px 2px 1px #00000061;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.1em;
+  min-height: 1em;
+  padding: 0.6em;
+}
+
+.form-group__email.grid {
+  grid-gap: 0.16em;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+}

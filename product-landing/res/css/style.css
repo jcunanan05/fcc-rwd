@@ -3,7 +3,10 @@
 @import url('flex.css');
 @import url('grid.css');
 @import url('font.css');
+@import url('header.css');
 @import url('navbar.css');
+@import url('form.css');
+@import url('card.css');
 @import url('breakpoints.css');
 
 
@@ -17,8 +20,10 @@ html, body {
   font-family: 'Merriweather', serif;
   min-height: 100vh;
   font-size: 1em;
+  font-weight: 400;
   color: var(--default-black);
   letter-spacing: 0.075em;
+  line-height: 1.5em;
 }
 
 body {
@@ -30,9 +35,15 @@ body > div.wrapper {
   min-height: 100vh;
 }
 
-.wrapper > .container.grid {
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 11fr 1.5fr;
+.section {
+  width: 100%;
+  max-width: 50em;
+  min-height: 3em;
+  padding: 3em 0 3em 0;
+}
+
+.container__section {
+  margin: 0 2.5em 0 2.5em;
 }
 
 .main {
@@ -41,59 +52,15 @@ body > div.wrapper {
   padding-bottom: 4em;
 }
 
-.header {
-  width: 90%;
-  height: 100%;
-  max-height: 35em;
-}
-
-.header .container {
-  grid-template-rows: 10fr 2fr;
-  grid-auto-columns: 1fr;
-}
-
-.header .form {
-  align-items: flex-start;
-}
-
-.header .subtitle--header {
-  margin-top: 1.6em;
-}
-
-button.button {
-  color: #000000e1;
-  border: none;
-  background: none;
-  background-color: rgb(255, 255, 255);
-  border: 0.7px solid #00000069;
-  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0.1em;
-  padding: 0.5em;
-  min-width: 6.8em;
-}
-
-.form input {
-  border: none;
-  border: 1px solid #00000052;
-  background: none;
-  box-shadow: inset 0px 0px 2px 1px #00000061;
-  background-color: rgb(255, 255, 255);
-  border-radius: 0.1em;
-  min-height: 1em;
-  padding: 0.6em;
-}
-
-.form-group__email.grid {
-  grid-gap: 0.16em;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: 1fr;
-}
-
 .section {
   padding: 2em 0 2em 0;
   width: 100%;
   min-height: 50px;
 }
+
+.title--section + div {
+  margin-top: 4em;
+} 
 
 .footer {
   min-height: 3em;

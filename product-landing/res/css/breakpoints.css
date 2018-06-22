@@ -18,21 +18,46 @@
   }
 }
 
+@media screen and (min-width: 640px) {
+  .card.grid {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+  }
+
+  .card__content {
+    text-align: start;
+  }
+
+  .instruments.grid {
+    justify-content: start;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .navbar {
-    min-height: 2.5em;
+    min-height: 3.5em;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.24);
+  }
+
+  .navbar-brand {
+    box-shadow: none;
   }
 
   .navbar .navbar-menu {
     display: flex;
+    justify-content: flex-end;
   }
 
-  .navbar-brand {
-    flex: 0 0 auto;
+  a.navbar-item:hover, a.navbar-item:hover > p {
+    color: rgb(143, 143, 143);
+    background: none;
   }
 
   .navbar-burger {
     display: none;
+  }
+
+  .navbar.grid {
+    grid-template-columns: 1fr 4fr;
   }
 }
