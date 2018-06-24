@@ -1,6 +1,9 @@
 .navbar {
-  min-height: 3.5em;
+  min-height: var(--navbar-height);
   z-index: 1;
+  width: 100%;
+  background-color: white;
+  position: fixed;
 }
 
 .navbar-brand {
@@ -8,8 +11,6 @@
   height: 3.5em;
   justify-content: space-between;
 }
-
-
 
 .navbar-burger {
   cursor: pointer;

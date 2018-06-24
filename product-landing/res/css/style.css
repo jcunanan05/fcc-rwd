@@ -14,6 +14,7 @@
   --default-black: #222; 
   --default-grey: #eee;
   --default-red: #ef5350;
+  --navbar-height: 3.5em;
 }
 
 html, body {
@@ -22,7 +23,7 @@ html, body {
   font-size: 1em;
   font-weight: 400;
   color: var(--default-black);
-  letter-spacing: 0.075em;
+  letter-spacing: 0.055em;
   line-height: 1.5em;
 }
 
@@ -50,6 +51,7 @@ body > div.wrapper {
   background-color: #ffffff;
   padding-top: 4em;
   padding-bottom: 4em;
+  margin-top: var(--navbar-height);
 }
 
 .section {
