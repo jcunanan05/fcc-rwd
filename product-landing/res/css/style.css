@@ -23,7 +23,7 @@ html, body {
   font-size: 1em;
   font-weight: 400;
   color: var(--default-black);
-  letter-spacing: 0.055em;
+  letter-spacing: 0.02em;
   line-height: 1.5em;
 }
 
@@ -44,7 +44,7 @@ body > div.wrapper {
 }
 
 .container__section {
-  margin: 0 2.5em 0 2.5em;
+  width: 80%;
 }
 
 .main {
@@ -62,7 +62,12 @@ body > div.wrapper {
 
 .title--section + div {
   margin-top: 4em;
-} 
+}
+
+.video__frame {
+  margin-left: 1em;
+  margin-right: 1em;
+}
 
 .footer {
   min-height: 3em;

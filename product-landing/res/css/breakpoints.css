@@ -27,10 +27,6 @@
   .card__content {
     text-align: start;
   }
-
-  .instruments.grid {
-    justify-content: start;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -59,5 +55,9 @@
 
   .navbar.grid {
     grid-template-columns: 1fr 4fr;
+  }
+
+  .container__section {
+    width: 100%;
   }
 }

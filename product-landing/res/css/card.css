@@ -28,7 +28,7 @@
 .instruments.grid {
   grid-template-columns: repeat(auto-fit, 14em);
   grid-gap: 1.5em;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .instrument figure {
