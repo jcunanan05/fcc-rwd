@@ -7,6 +7,7 @@
 @import url('navbar.css');
 @import url('form.css');
 @import url('card.css');
+@import url('footer.css');
 @import url('breakpoints.css');
 
 
@@ -47,6 +48,14 @@ body > div.wrapper {
   width: 80%;
 }
 
+.video__frame {
+  width: 100%;
+  max-width: 24em;
+  min-height: 10em;
+  max-height: 16em;
+  height: 50vw;
+}
+
 .main {
   background-color: #ffffff;
   padding-top: 4em;
@@ -62,14 +71,4 @@ body > div.wrapper {
 
 .title--section + div {
   margin-top: 4em;
-}
-
-.video__frame {
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-.footer {
-  min-height: 3em;
-  background-color: var(--default-grey);
 }

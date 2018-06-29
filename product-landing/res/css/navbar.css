@@ -34,8 +34,8 @@
 .navbar-item {
   height: 100%;
   min-height: 3em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,7 @@ a.navbar-item:hover, a.navbar-item:hover > p {
   background-color: #fbfbfb;
 }
 
-.navbar-menu {
+.navbar .navbar-menu {
   display: none;
 }
 

@@ -1,0 +1,36 @@
+.footer {
+  min-height: 3em;
+  background-color: var(--default-grey);
+}
+
+.contact-us, .social {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.flex__liquid .contact-us, .flex__liquid .social {
+  flex-basis: 18em;
+}
+
+.social__icon {
+  margin: 0;
+  padding: 0;
+}
+
+.map {
+  width: 100%;
+}
+
+.map.flex--column {
+  align-items: center;
+}
+
+.map iframe {
+  width: 18em;
+  height: 10em;
+}
+
+.social__icon img {
+  width: 3em;
+  height: 3em;
+}

@@ -1,11 +1,3 @@
 .grid {
   display: grid;
 }
-
-.grid__column--10 {
-  grid-template-columns: 10fr;
-}
-
-.grid__column--1 {
-  grid-template-columns: 1fr;
-}

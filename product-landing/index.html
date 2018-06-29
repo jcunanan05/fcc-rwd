@@ -24,12 +24,14 @@
         </div>
 
         <div class="navbar-menu flex">
-          <a class="navbar-item">Home</a>
-          <a class="navbar-item">About</a>
+          <a class="navbar-item" href="#home">Home</a>
+          <a class="navbar-item" href="#who-we-are">Who We Are</a>
+          <a class="navbar-item" href="#instruments">Instruments</a>
+          <a class="navbar-item" href="#contact">Contact Us</a>
         </div>
       </nav>
   
-      <main class="main flex flex--column center-x y--start">
+      <main id="home" class="main flex flex--column center-x y--start">
         <header class="header flex center-x">
           <div class="container grid">
             <section class="text--center">
@@ -53,7 +55,7 @@
           </div>
         </header>
 
-        <section class="section who-we-are flex center-x">
+        <section id="who-we-are" class="section who-we-are flex center-x">
           <div class="container__section flex flex--column">
             <h2 class="title--section">
               Who we are
@@ -96,7 +98,7 @@
           </div>
         </section>
 
-        <section class="section instruments-offered flex center-x">
+        <section id="instruments" class="section instruments-offered flex center-x">
           <div class="container__section flex flex--column">
             <h2 class="title--section">Instruments</h2>
 
@@ -148,14 +150,50 @@
           </div>
         </section>
 
-        <!-- <section class="section video flex center-all">
-          <div class="container__section video__frame flex center-all">
-            <iframe src="https://www.youtube.com/embed/55PVOVPPu1g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <section class="section video flex center-all">
+          <div class="container__section flex center-all">
+            <iframe class="video__frame" src="https://www.youtube.com/embed/55PVOVPPu1g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
-        </section> -->
+        </section>
       </main>
   
-      <footer class="footer"></footer>
+      <footer class="footer flex flex--column center-x">
+        <div class="section flex--column center-x">
+          <div class="footer__section flex flex__wrap center-x">
+            <section id="contact" class="contact-us flex__liquid">
+              <h3 class="title--footer">Contact Us</h3>
+
+              <p>
+                Weston Music School <br>
+                <em>
+                  2125 Weston Road, <br>
+                  York, ON M9N 1X8
+                </em>
+              </p>
+
+              <div class="map flex flex--column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.0909987753738!2d-79.52463582371566!3d43.702984098624135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b30db0195a1a7%3A0x6eee1f2f227019d9!2s2125+Weston+Rd%2C+York%2C+ON+M9N+1X8!5e0!3m2!1sen!2sca!4v1530218465104" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </section>
+
+            <section class="social flex__liquid text--center">
+              <h3 class="title--footer">Social</h3>
+
+              <div class="social__icons flex center-x flex__wrap">
+                <figure class="social__icon">
+                  <a href="https://www.facebook.com/WestonNewMusicSchool/">
+                    <img src="http://simpleicon.com/wp-content/uploads/facebook-3-256x256.png">
+                  </a>
+                </figure>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="section text--center">
+          <p>Copyright &copy; 2018. All Rights Reserved.</p>
+        </div>
+      </footer>
 
       <script src="script.js"></script>
     </div>

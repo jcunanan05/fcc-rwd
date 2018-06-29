@@ -10,6 +10,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .footer__section, .contact-us, .social {
+    text-align: center;
+  }
+}
+
 /* Tablet, Desktop and above */
 @media screen and (min-width: 480px) {
   div.form-group__email.grid {
@@ -44,11 +50,6 @@
     justify-content: flex-end;
   }
 
-  a.navbar-item:hover, a.navbar-item:hover > p {
-    color: rgb(143, 143, 143);
-    background: none;
-  }
-
   .navbar-burger {
     display: none;
   }
@@ -59,5 +60,9 @@
 
   .container__section {
     width: 100%;
+  }
+
+  div.map.flex--column {
+    align-items: flex-start;
   }
 }
