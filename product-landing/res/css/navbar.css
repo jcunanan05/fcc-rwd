@@ -6,6 +6,11 @@
   position: fixed;
 }
 
+.navbar-brand__img {
+  width: 2.5em;
+  height: 2.5em;
+}
+
 .navbar-brand {
   box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.24);
   height: 3.5em;

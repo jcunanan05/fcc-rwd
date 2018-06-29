@@ -1,14 +1,14 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');
-@import url('flex.css');
-@import url('grid.css');
-@import url('font.css');
-@import url('header.css');
-@import url('navbar.css');
-@import url('form.css');
-@import url('card.css');
-@import url('footer.css');
-@import url('breakpoints.css');
+@import url('res/css/flex.css');
+@import url('res/css/grid.css');
+@import url('res/css/font.css');
+@import url('res/css/header.css');
+@import url('res/css/navbar.css');
+@import url('res/css/form.css');
+@import url('res/css/card.css');
+@import url('res/css/footer.css');
+@import url('res/css/breakpoints.css');
 
 
 :root {
