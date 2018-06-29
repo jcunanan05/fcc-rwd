@@ -3,12 +3,7 @@
   background-color: var(--default-grey);
 }
 
-.contact-us, .social {
-  padding-left: 3em;
-  padding-right: 3em;
-}
-
-.flex__liquid .contact-us, .flex__liquid .social {
+section.flex__liquid.contact-us, section.flex__liquid.social {
   flex-basis: 18em;
 }
 

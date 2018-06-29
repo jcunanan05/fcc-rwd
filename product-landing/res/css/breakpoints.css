@@ -65,4 +65,9 @@
   div.map.flex--column {
     align-items: flex-start;
   }
+
+  .contact-us, .social {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
 }
